@@ -47,17 +47,171 @@ table {
 	border-spacing: 0;
 }
 
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
 .container {
     display: grid;
-    grid-template-columns: 300px 700px;
-    grid-template-rows: 200px 600px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2.5fr 12.5fr;
     border: black 3px solid;
 }
 
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    /* display: flex; */
+    grid-template-rows: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     border: black 3px solid;
+}
+
+.header1 {
+    /* display: flex;
+    align-items: center;
+    justify-content: end; */
+    grid-row: 1 / 2;
+    border: black solid 2px;
+    display: grid;
+}
+
+.header1-section1 {
+    display: grid;
+    grid-template-columns: 0fr 1.5fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    border: black solid 2px;
+    column-gap: 5px;
+}
+
+.header1-section2 {
+    display: flex;
+    justify-self: end;
+    align-items: center;
+}
+
+.header2 {
+    grid-row: 2 / 3;
+    border: black solid 2px;
+    display: flex;
+}
+
+.header-button {
+    background-color: #68BBE3;
+    border: solid 0px;
+    border-radius: 25px;
+    width: 80px;
+    height: 40px;
+    color: white;
+}
+
+.header-icon {
+    width: 50px;
+    height: 30px;
+}
+
+.searchBar {
+    margin-right: 100px;
+    border: black solid 2px;
+    border-radius: 20px;
+    height: 25px;
+    background-color: lightgrey;
+}
+
+.magnify {
+  margin-left: 30px;
+}
+
+.profile-name {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-right: 80px;
+  margin-left: 30px;
+}
+
+.profile-pic {
+    width: 50px;
+    border: solid 0px;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+
+.profile-pic-big {
+    width: 70px;
+    border: solid 0px;
+    border-radius: 35px;
 }
 
 .sidebar {
@@ -65,6 +219,16 @@ table {
     grid-column: 1 / 2;
     border: black 3px solid;
     background-color: #68BBE3;
+}
+
+.sidebar-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
 }
 
 .main-content {
@@ -76,14 +240,36 @@ table {
 .side-content {
     color: white;
     font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.side-content2 {
+    margin-top: 60px;
+    margin-bottom: 350px;
 }
 
 .dashboard {
     color: white;
     font-size: 2rem;
+    margin: 25px 10px 40px 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
 }
 
 .dashboard-img {
+    margin-right: 10px;
     width: 50px;
     height: 40px;
+    filter: invert(100%) sepia(6%) saturate(25%) hue-rotate(207deg) brightness(108%) contrast(106%);
+}
+
+.mini-icon {
+    margin-right: 20px;
+    margin-bottom: 3px;
+    width: 30px;
+    height: 25px;
+    filter: invert(100%) sepia(6%) saturate(25%) hue-rotate(207deg) brightness(108%) contrast(106%);
 }
